@@ -3,12 +3,11 @@ var num5 = 0;
 var array1 = [];
 var array2 = [];
 
-
-for(i = 0; num3 < 999; i++){
+for (i = 0; num3 < 999; i++) {
   array1.push(num3 += 3);
 }
 
-for(j = 0; num5 < 995; j++){
+for (j = 0; num5 < 995; j++) {
   array2.push(num5 += 5);
 }
 
@@ -18,11 +17,11 @@ var array3 = array1.filter(function(val) {
 
 var arrayOfArrays = [array1, array2, array3];
 
-for(k = 0; k < arrayOfArrays.length; k++) {
-    function getSum(array) {
+for (k = 0; k < arrayOfArrays.length; k++) {
+  function getSum(array) {
 
-      return array.reduce(function(accumulator, currentValue) {
-        return accumulator + currentValue;
+    return array.reduce(function(accumulator, currentValue) {
+      return accumulator + currentValue;
     });
   }
   function answer() {
